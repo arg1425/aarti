@@ -1,3 +1,6 @@
 import pandas as pd
-df = pd.read_csv("original.csv")
+data = {'name': ['John', 'Molly', 'Tania', 'Juily', 'Amay'], 
+        'year': [2011, 2014, 2013, 2015, 2017], 
+        'reports': [24, 4, 35, 20, 31]}
+df = pd.DataFrame(data, index = ['Cochice', 'Pima', 'Santa Cruz', 'Maricopa', 'Yuma'])
 df
